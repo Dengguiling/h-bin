@@ -1,5 +1,5 @@
 # h-bin
-![](https://img.shields.io/badge/author-Ling0220-brightgreen.svg)![](https://img.shields.io/badge/version-v0.0.1-blue.svg)![](https://img.shields.io/badge/platform-windows|linux|mac-lightgrey.svg)![](https://img.shields.io/badge/language-python-orange.svg)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![](https://img.shields.io/badge/author-Ling0220-brightgreen.svg) ![](https://img.shields.io/badge/version-v0.0.1-blue.svg) ![](https://img.shields.io/badge/platform-windows|linux|mac-lightgrey.svg) ![](https://img.shields.io/badge/language-python-orange.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 
 -   [Background](#Background)
