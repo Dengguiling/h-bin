@@ -1,1 +1,2 @@
-python h-bin.py
+python3 h-bin.py
+pause

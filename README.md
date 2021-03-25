@@ -1,31 +1,13 @@
 # h-bin
-![](https://img.shields.io/badge/author-Ling0220-brightgreen.svg) ![](https://img.shields.io/badge/version-v0.0.1-blue.svg) ![](https://img.shields.io/badge/platform-windows|linux|mac-lightgrey.svg) ![](https://img.shields.io/badge/language-python-orange.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
-
--   [Background](#Background)
--   [Install](#Install)
--   [Usage](#Usage)
--   [License](#License)
-
+![](https://img.shields.io/badge/author-Ling0220-brightgreen.svg)  ![](https://img.shields.io/badge/language-python-orange.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 # Background
-这是一个为嵌入式工作人员制作的软件。  
-This is software for embedded workers.  
-
-某些触摸屏的固件是bin文件，需要转换成C语言中的头文件。  
-The firmware for some touch screens is a bin file that needs to be converted to a header file in C.  
-
-所以制作本工具，用于头文件和bin文件的互相转换。  
-So make this tool, for the header file and bin file conversion.  
-
-# Install
-``` shell
-git clone https://github.com/Ling0220/h-bin.git
-```
+> 工作中遇到bin固件和header文件互转的需求，故留下脚本批处理备用。
+1. 将固件（bin）文件的数据，转换成C语言的header文件的数组形式。
+2. 将header文件的数组数据，转换成固件（bin）的数据。
 
 # Usage
-**拷贝你需要转换的头文件或bin文件到h-bin文件夹下。**  
-**Copy the header file or bin file you need to convert to the h-bin folder.**
+> 拷贝文件到当前目录
 ``` shell
 python3 h-bin.py
 ```
