@@ -24,7 +24,7 @@ def h2bin(file_name):
         h = open(f"./{file_name}.h", 'r')
         b = open(f"./{file_name}_output.bin", 'wb+')
     except Exception as ex:
-        print("[!] {file_name}.h 打开文件失败! ex: ", ex)
+        print("[!] {file_name}.h open file failed! ex: ", ex)
         return
 
     hex_list = re.findall(r"0x[0-9a-fA-F]+",
@@ -33,9 +33,9 @@ def h2bin(file_name):
     if hex_list:
         hex_list = [int(i, 16) for i in hex_list]
         b.write(bytearray(hex_list))
-        print(f"[-] {file_name}.h -> {file_name}_output.bin 转换成功!")
+        print(f"[-] {file_name}.h -> {file_name}_output.bin change!")
     else:
-        print(f"[!] {file_name}.h 读取数据为空!")
+        print(f"[!] {file_name}.h data is None!")
 
     b.close()
     h.close()
@@ -52,7 +52,7 @@ def bin2h(file_name):
         b = open(f"./{file_name}.bin", 'rb')
         h = open(f"./{file_name}_output.h", 'w+')
     except Exception as ex:
-        print("[!] {file_name}.bin 打开失败! ex: ", ex)
+        print("[!] {file_name}.bin open file failed! ex: ", ex)
         return
 
     h.write("static unsigned char array[] = {\n")
@@ -69,7 +69,7 @@ def bin2h(file_name):
         h.write(f"0x{num.hex()}, ")
 
     h.write("\n};")
-    print(f"[-] {file_name}.bin -> {file_name}_output.h 转换成功!")
+    print(f"[-] {file_name}.bin -> {file_name}_output.h change!")
     b.close()
     h.close()
 
@@ -95,6 +95,6 @@ if __name__ == '__main__':
         bin2h(file)
 
     if not len(head_file_names) and not len(bin_file_names):
-        print("[!] 当前文件夹没有.h文件或者.bin文件！")
+        print("[!] There is no .h file or .bin file in the current folder!")
 
-    print("[-] 转换完成，退出脚本...")
+    print("[-] done, exit!")
