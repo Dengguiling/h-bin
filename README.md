@@ -1,18 +1,20 @@
 # h-bin
-![](https://img.shields.io/badge/author-GREENYVY-brightgreen.svg)  ![](https://img.shields.io/badge/language-python-orange.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[EN](./README_EN.md)
 
-## What?
-Python tools for me.
+## 简介
+Bin文件和Header文件互转脚本，用于固件的相互转换。
 
-# Why?
-I encountered the need to transfer the bin firmware and header files to each other during the work, so I left the script batch processing for backup.
+## 背景
+工作中遇到触摸屏驱动固件需要将bin文件和头文件相互转换，所以写了这个脚本。
 
-# How?
+## 使用方式
+1. 拷贝需要转换的文件到本目录下
+2. 运行脚本进行转换
 ``` shell
 python3 h-bin.py
 ```
 
-# TodoList
+## Todo
 - [X] bin file <-> header file
 
 # License
