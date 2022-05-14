@@ -18,4 +18,4 @@ python3 h-bin.py
 - [X] bin file <-> header file
 
 # License
-[MIT © GREENYvY](./LICENSE)
+[MIT © GREENYYY](./LICENSE)
